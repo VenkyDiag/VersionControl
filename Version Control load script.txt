@@ -42,6 +42,7 @@ Load
  Round(1000*Rand()*Rand()*Rand1) as Expression1,
  Round(  10*Rand()*Rand()*Rand1) as Expression2,
  Round(  100*Rand()*Rand()*Rand1) as Expression4,
+ Round(  120*Rand()*Rand()*Rand1) as Expression5,
  Round(Rand()*Rand1,0.00001) as Expression3;
 Load 
  Rand() as Rand1,
