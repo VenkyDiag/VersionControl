@@ -52,6 +52,25 @@ Autogenerate 1000
  While Rand()<=0.5 or IterNo()=1;
 
  Comment Field Dim1 With "This is a field comment";
+///$tab Section 3
+LOAD
+    Account_no,
+    Rec_no,
+    "Date",
+    Balance,
+    "E",
+    F,
+    G,
+    H,
+    "I",
+    J,
+    K,
+    L,
+    M
+FROM [lib://DataFiles/Bank Dataset (1).xlsx]
+(ooxml, embedded labels, table is Input);
+
+
 ///$tab Exit Script
 Exit Script;
 ///$tab Data
