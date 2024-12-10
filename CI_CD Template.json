@@ -1,0 +1,29 @@
+
+SHEETS
+
+OBJECTS ON SHEETS
+
+DIMENSIONS
+
+MEASURES
+
+VARIABLES
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":11,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":1,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":1,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":1,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":11,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qName":"Manager ID","qCardinal":20,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"Manager Name","qCardinal":20,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"ParentID","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"EMP_Name","qCardinal":20,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"Email","qCardinal":20,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"Designation","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"Reporting_to","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"State","qCardinal":6,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"City","qCardinal":9,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
+{"qName":"Pincode","qCardinal":9,"qTags":["$numeric","$integer"],"qSrcTables":["Banking_Details"]}
+{"qName":"Branch Code","qCardinal":6,"qTags":["$ascii","$text"],"qSrcTables":["Banking_Details"]}
