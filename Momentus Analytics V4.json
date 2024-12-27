@@ -1,0 +1,123 @@
+
+SHEETS
+{"qInfo":{"qId":"5b3cb84e-1e4e-475f-8e2b-4ebf2c0e0f80","qType":"sheet"},"qMeta":{"title":"Sales New (1) (1) (1)","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"5b3cb84e-1e4e-475f-8e2b-4ebf2c0e0f80","approved":false,"published":true,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.611Z","modifiedDate":"2024-12-24T11:33:15.611Z","publishTime":"2024-11-15T09:41:22.411Z","privileges":["read","publish"]},"qData":[]}
+{"qInfo":{"qId":"b50522b0-b42b-4457-8cfe-0accc4d5cd84","qType":"sheet"},"qMeta":{"title":"Adhoc Report Builder","description":"","_resourcetype":"app.object","_objecttype":"sheet","id":"b50522b0-b42b-4457-8cfe-0accc4d5cd84","approved":false,"published":true,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.627Z","modifiedDate":"2024-12-24T11:33:15.627Z","publishTime":"2024-11-15T07:47:30.202Z","privileges":["read","publish"]},"qData":[]}
+
+OBJECTS ON SHEETS
+{"name":"32b43f7a-3203-47f3-a2c6-9682bfec5edd","type":"piechart","col":1,"row":24,"colspan":21,"rowspan":11,"bounds":{"x":1.4285714285714286,"y":34.285714285714285,"width":30,"height":15.71428571428571}}
+{"name":"846606fa-c606-4dca-9caa-6eaba5953be5","type":"sn-layout-container","col":1,"row":8,"colspan":39,"rowspan":15,"bounds":{"x":1.4285714285714286,"y":11.428571428571429,"width":55.714285714285715,"height":21.428571428571427}}
+{"name":"a6884c5c-cb50-4791-83e5-33397247b02e","type":"barchart","col":41,"row":6,"colspan":28,"rowspan":17,"bounds":{"x":58.57142857142858,"y":8.571428571428571,"width":40,"height":24.285714285714285}}
+{"name":"90b30251-18d0-4780-823a-76c1330adac4","type":"action-button","col":1,"row":6,"colspan":9,"rowspan":2,"bounds":{"x":1.4285714285714286,"y":8.571428571428571,"width":12.857142857142856,"height":2.857142857142857}}
+{"name":"b15148d7-999e-4225-8f67-b18368ee32a0","type":"action-button","col":19,"row":6,"colspan":9,"rowspan":2,"bounds":{"x":27.142857142857142,"y":8.571428571428571,"width":12.857142857142856,"height":2.857142857142857}}
+{"name":"f0ab280e-f982-4c2f-8741-0407d698691d","type":"action-button","col":28,"row":6,"colspan":9,"rowspan":2,"bounds":{"x":40,"y":8.571428571428571,"width":12.857142857142856,"height":2.857142857142857}}
+{"name":"292bb345-a652-4a93-9efe-504ab0aecc87","type":"action-button","col":10,"row":6,"colspan":9,"rowspan":2,"bounds":{"x":14.285714285714285,"y":8.571428571428571,"width":12.857142857142856,"height":2.857142857142857}}
+{"name":"182080f1-59cf-482f-8e0e-93a080b6053b","type":"piechart","col":46,"row":24,"colspan":23,"rowspan":11,"bounds":{"x":65.71428571428571,"y":34.285714285714285,"width":32.857142857142854,"height":15.71428571428571}}
+{"name":"78a44705-2b2d-43da-9897-44e4bbee269f","type":"sn-layout-container","col":1,"row":0,"colspan":68,"rowspan":5,"bounds":{"x":1.4285714285714286,"y":0,"width":97.14285714285714,"height":7.1428571428571415}}
+{"name":"c1c1fbe0-1ca9-4290-bacd-0672dc50f01e","type":"barchart","col":1,"row":36,"colspan":32,"rowspan":15,"bounds":{"x":1.4285714285714286,"y":51.42857142857143,"width":45.714285714285715,"height":21.428571428571427}}
+{"name":"FqHyLq","type":"table","col":1,"row":52,"colspan":68,"rowspan":18,"bounds":{"x":1.4285714285714286,"y":74.28571428571429,"width":97.14285714285714,"height":25.714285714285715}}
+{"name":"kLAHQp","type":"piechart","col":23,"row":24,"colspan":22,"rowspan":11,"bounds":{"x":32.857142857142854,"y":34.285714285714285,"width":31.428571428571427,"height":15.71428571428571}}
+{"name":"zJhBPsW","type":"sn-nlg-chart","col":34,"row":36,"colspan":35,"rowspan":15,"bounds":{"x":48.57142857142857,"y":51.42857142857143,"width":50,"height":21.428571428571427}}
+{"name":"2e880f14-90ec-49a7-9757-df7e5c8a8298","type":"sn-table","col":0,"row":0,"colspan":24,"rowspan":12,"bounds":{"y":0,"x":0,"width":100,"height":100}}
+
+DIMENSIONS
+{"qInfo":{"qId":"MFRkPSv","qType":"dimension"},"qMeta":{"title":"Sales Drill Cyclic","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"MFRkPSv","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.643Z","modifiedDate":"2024-12-24T11:33:15.643Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"tXkqRup","qType":"dimension"},"qMeta":{"title":"Time Drill","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"tXkqRup","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.643Z","modifiedDate":"2024-12-24T11:33:15.643Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"FuQYF","qType":"dimension"},"qMeta":{"title":"Month Week Days","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"FuQYF","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.644Z","modifiedDate":"2024-12-24T11:33:15.644Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"2a0fe00b-b775-4661-bf88-4586b5f005bc","qType":"dimension"},"qMeta":{"title":"Event Type","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"2a0fe00b-b775-4661-bf88-4586b5f005bc","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.644Z","modifiedDate":"2024-12-24T11:33:15.644Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"FUuBjW","qType":"dimension"},"qMeta":{"title":"Month & Event","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"FUuBjW","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.645Z","modifiedDate":"2024-12-24T11:33:15.645Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"fhjjpr","qType":"dimension"},"qMeta":{"title":"Order Type","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"fhjjpr","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.670Z","modifiedDate":"2024-12-24T11:33:15.670Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"hAmmQ","qType":"dimension"},"qMeta":{"title":"Sale Channel","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"hAmmQ","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.682Z","modifiedDate":"2024-12-24T11:33:15.682Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"apLGV","qType":"dimension"},"qMeta":{"title":"Event Name","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"dimension","id":"apLGV","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.781Z","modifiedDate":"2024-12-24T11:33:15.781Z","privileges":["read","update","delete","publish"]},"qData":[]}
+
+MEASURES
+{"qInfo":{"qId":"vjXmYq","qType":"measure"},"qMeta":{"title":"Cumulative Booking Revenue","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"vjXmYq","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.627Z","modifiedDate":"2024-12-24T11:33:15.627Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"cMbLQkJ","qType":"measure"},"qMeta":{"title":"Target Event Month","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"cMbLQkJ","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.633Z","modifiedDate":"2024-12-24T11:33:15.633Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"4aaf9425-ab4d-47da-8658-2a20a78b5f29","qType":"measure"},"qMeta":{"title":"Booking Event month","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"4aaf9425-ab4d-47da-8658-2a20a78b5f29","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.633Z","modifiedDate":"2024-12-24T11:33:15.633Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"sdRAfL","qType":"measure"},"qMeta":{"title":"Occupied","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"sdRAfL","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.633Z","modifiedDate":"2024-12-24T11:33:15.633Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"UWjPrT","qType":"measure"},"qMeta":{"title":"Available","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"UWjPrT","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.634Z","modifiedDate":"2024-12-24T11:33:15.634Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"awUKVqG","qType":"measure"},"qMeta":{"title":"Booking Revenue","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"awUKVqG","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.641Z","modifiedDate":"2024-12-24T11:33:15.641Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"TqMCp","qType":"measure"},"qMeta":{"title":"Occupancy Rate","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"TqMCp","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.641Z","modifiedDate":"2024-12-24T11:33:15.641Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"bsqf","qType":"measure"},"qMeta":{"title":"=Cumulative Budget","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"bsqf","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.641Z","modifiedDate":"2024-12-24T11:33:15.641Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"XjxqEm","qType":"measure"},"qMeta":{"title":"Target","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"XjxqEm","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.642Z","modifiedDate":"2024-12-24T11:33:15.642Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"HDpv","qType":"measure"},"qMeta":{"title":"Booking Revenue month","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"HDpv","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.642Z","modifiedDate":"2024-12-24T11:33:15.642Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"xHCUPEa","qType":"measure"},"qMeta":{"title":"Upsell Rate","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"xHCUPEa","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.775Z","modifiedDate":"2024-12-24T11:33:15.775Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"9895d8c7-b402-45d3-875f-53858087fcb5","qType":"measure"},"qMeta":{"title":"Booking Squre Feet","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"9895d8c7-b402-45d3-875f-53858087fcb5","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.776Z","modifiedDate":"2024-12-24T11:33:15.776Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"msCTdsB","qType":"measure"},"qMeta":{"title":"Space Name","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"msCTdsB","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.782Z","modifiedDate":"2024-12-24T11:33:15.782Z","privileges":["read","update","delete","publish"]},"qData":[]}
+{"qInfo":{"qId":"FfHaY","qType":"measure"},"qMeta":{"title":"Space Type","description":"","tags":[],"_resourcetype":"app.object","_objecttype":"measure","id":"FfHaY","approved":false,"published":false,"owner":"auth0|f5d07675d1f28fc84dcf1f9ee8c0b8d5b1fde23b0e24969641b93a1928f9a366","ownerId":"Yx2AY9D-aoqwgsC0sKfFwqdrYz_NjTRh","createdDate":"2024-12-24T11:33:15.782Z","modifiedDate":"2024-12-24T11:33:15.782Z","privileges":["read","update","delete","publish"]},"qData":[]}
+
+VARIABLES
+{"qName":"varMinDate","qDefinition":"44927","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"ea310e96-2359-4a50-8e60-83883947e972","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"varMaxDate","qDefinition":"45500","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"b6457914-337e-4b79-a4ea-d97a5b89d4c8","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vEnabledFieldNo","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"7a978fe8-f63e-4593-ae98-2da4d9053468","qType":"variable"},"qData":[],"qIsScriptCreated":true}
+{"qName":"vfilter","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"a58f3906-79b2-476f-9e0d-4be6f17deebc","qType":"variable"},"qData":[]}
+{"qName":"crossAppsSearchEnabled","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"ae98cf3b-21de-47fe-9867-ebb0558c0739","qType":"variable"},"qData":[]}
+{"qName":"vFilterShow","qDefinition":"0","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"05c0589e-91b6-40fd-b16e-39fc8299bde0","qType":"variable"},"qData":[]}
+{"qName":"vMinDate","qDefinition":"44927","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"5bb98170-051b-4195-87cb-676a7c4ad554","qType":"variable"},"qData":[]}
+{"qName":"vMaxBookingRevenue","qDefinition":"Max(Aggr(Sum([Booking Revenue]), MonthYear))","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"d10ec8cc-d381-4d1f-a13d-d53ec8c61df1","qType":"variable"},"qData":[]}
+{"qName":"vMaxDate","qDefinition":"45500","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"67a238ae-efdf-43f3-bc74-927ed92fcdb0","qType":"variable"},"qData":[]}
+{"qName":"vMiner","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"accdcb7c-93fd-4665-8bd2-c2137a7c7127","qType":"variable"},"qData":[]}
+{"qName":"VTarget_line","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"47a3ec9e-41c0-48ea-b51c-2cebf12de986","qType":"variable"},"qData":[]}
+{"qName":"VManagerNAme","qDefinition":"=only([Manager Name])","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"c24ecd19-1017-45c2-8f04-fa0826dda06b","qType":"variable"},"qData":[]}
+{"qName":"vMaxDateInv","qDefinition":"=Date(Max(Booking_date),'DD-MMM-YY')","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"cdba9c0e-88cf-43ea-8127-50a435f229d4","qType":"variable"},"qData":[]}
+{"qName":"vChangeColor","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"6ba2eed0-8f27-4343-bd50-2693411b5280","qType":"variable"},"qData":[]}
+{"qName":"vNLSight","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"11f77610-958f-401c-a258-5baeb2a65310","qType":"variable"},"qData":[]}
+{"qName":"VTarget_Kpi","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"9aa86a81-e67b-43b3-bd07-2fff8fd9d5bb","qType":"variable"},"qData":[]}
+{"qName":"vButtonColor","qDefinition":"1","qMeta":{"privileges":["read","update","delete"]},"qInfo":{"qId":"dab98fe8-a6ff-47f1-aadc-be9a28dcffa8","qType":"variable"},"qData":[]}
+
+FIELDS
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Field","qCardinal":50,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Table","qCardinal":7,"qTags":["$key","$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Rows","qCardinal":7,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Fields","qCardinal":7,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$FieldNo","qCardinal":13,"qTags":["$hidden","$system","$numeric","$integer"],"qSrcTables":[]}
+{"qIsHidden":true,"qIsSystem":true,"qName":"$Info","qCardinal":1,"qTags":["$hidden","$system","$ascii","$text"],"qSrcTables":[]}
+{"qName":"DL_DISTRIBUTION_RECIPIENT_NAME","qCardinal":2,"qTags":["$ascii","$text","DL_DISTRIBUTION_SVC__recipientName"],"qSrcTables":["DL_DISTRIBUTION_SVC_USERS_QCS"]}
+{"qName":"DL_DISTRIBUTION_EMAIL","qCardinal":2,"qTags":["$ascii","$text","DL_DISTRIBUTION_SVC__recipientEmail"],"qSrcTables":["DL_DISTRIBUTION_SVC_USERS_QCS"]}
+{"qName":"DL_DISTRIBUTION_FILTERS","qCardinal":2,"qTags":["$ascii","$text","DL_DISTRIBUTION_SVC__recipientFilters"],"qSrcTables":["DL_DISTRIBUTION_SVC_USERS_QCS"]}
+{"qName":"DL_DISTRIBUTION_GROUP_NAMES","qCardinal":2,"qTags":["$key","$ascii","$text","DL_DISTRIBUTION_SVC__groupsName"],"qSrcTables":["DL_DISTRIBUTION_SVC_USERS_QCS","DL_DISTRIBUTION_SVC_GROUPS_QCS"]}
+{"qName":"DL_DISTRIBUTION_GROUP_DESCRIPTION","qCardinal":2,"qTags":["$ascii","$text","DL_DISTRIBUTION_SVC__groupDescription"],"qSrcTables":["DL_DISTRIBUTION_SVC_GROUPS_QCS"]}
+{"qName":"DL_DISTRIBUTION_GROUP_ENABLED","qCardinal":1,"qTags":["$numeric","$integer","DL_DISTRIBUTION_SVC__groupEnabled"],"qSrcTables":["DL_DISTRIBUTION_SVC_GROUPS_QCS"]}
+{"qName":"Venue ID","qCardinal":10,"qTags":["$key","$ascii","$text"],"qSrcTables":["Venue","Event_Groups"]}
+{"qName":"Venue Name","qCardinal":10,"qTags":["$ascii","$text"],"qSrcTables":["Venue"]}
+{"qName":"Location","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Venue"]}
+{"qName":"Ven_Capacity","qCardinal":10,"qTags":["$numeric","$integer"],"qSrcTables":["Venue"]}
+{"qName":"Ven_Type","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Venue"]}
+{"qName":"Cantach_info","qCardinal":10,"qTags":["$ascii","$text"],"qSrcTables":["Venue"]}
+{"qName":"Manager Name","qCardinal":10,"qTags":["$ascii","$text"],"qSrcTables":["Venue"]}
+{"qName":"REDUCTION","qCardinal":10,"qTags":["$ascii","$text"],"qSrcTables":["Venue"]}
+{"qName":"Space ID","qCardinal":100,"qTags":["$key","$ascii","$text"],"qSrcTables":["Space","Event_Booking_Details"]}
+{"qName":"Space Name","qCardinal":42,"qTags":["$ascii","$text"],"qSrcTables":["Space"]}
+{"qName":"Space Type","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Space"]}
+{"qName":"Sapce_Capacity","qCardinal":95,"qTags":["$numeric","$integer"],"qSrcTables":["Space"]}
+{"qName":"Hour_Price","qCardinal":100,"qTags":["$numeric"],"qSrcTables":["Space"]}
+{"qName":"Sq_Feet","qCardinal":98,"qTags":["$numeric","$integer"],"qSrcTables":["Space"]}
+{"qName":"Event ID","qCardinal":9999,"qTags":["$key","$ascii","$text"],"qSrcTables":["Event_Groups","Event_Booking_Details"]}
+{"qName":"Event Name","qCardinal":20,"qTags":["$ascii","$text"],"qSrcTables":["Event_Groups"]}
+{"qName":"Event Date","qCardinal":417,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["Event_Groups"]}
+{"qName":"Event Type","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Event_Groups"]}
+{"qName":"Total Pax","qCardinal":2410,"qTags":["$numeric","$integer"],"qSrcTables":["Event_Groups"]}
+{"qName":"_Event","qCardinal":5000,"qTags":["$numeric"],"qSrcTables":["Event_Groups"]}
+{"qName":"Event Revenue","qCardinal":5000,"qTags":["$numeric"],"qSrcTables":["Event_Groups"]}
+{"qName":"Occu_Rate","qCardinal":4410,"qTags":["$numeric"],"qSrcTables":["Event_Groups"]}
+{"qName":"Booking ID","qCardinal":7620,"qTags":["$ascii","$text"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"Booking_date","qCardinal":574,"qTags":["$key","$numeric","$integer","$timestamp","$date"],"qSrcTables":["Event_Booking_Details","MasterCalendar"]}
+{"qName":"Chart_Date","qCardinal":318,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"Start Time","qCardinal":24,"qTags":["$numeric"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"End Time","qCardinal":24,"qTags":["$numeric"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"Number of Pax","qCardinal":923,"qTags":["$numeric","$integer"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"Booking Revenue","qCardinal":5000,"qTags":["$numeric"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"Order Type","qCardinal":3,"qTags":["$ascii","$text"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"Sales_Channel","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"Target_Revenue","qCardinal":946,"qTags":["$numeric","$integer"],"qSrcTables":["Event_Booking_Details"]}
+{"qName":"DateNum","qCardinal":574,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Week","qCardinal":53,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Year","qCardinal":2,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Month","qCardinal":12,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Day","qCardinal":31,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"CurYTDFlag","qCardinal":2,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"LastYTDFlag","qCardinal":2,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"RC12","qCardinal":2,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
+{"qName":"MonthYear","qCardinal":19,"qTags":["$numeric","$integer","$timestamp","$date"],"qSrcTables":["MasterCalendar"]}
+{"qName":"Quarter","qCardinal":4,"qTags":["$ascii","$text"],"qSrcTables":["MasterCalendar"]}
+{"qName":"WeekYear","qCardinal":83,"qTags":["$ascii","$text"],"qSrcTables":["MasterCalendar"]}
+{"qName":"WeekDay","qCardinal":7,"qTags":["$numeric","$integer"],"qSrcTables":["MasterCalendar"]}
