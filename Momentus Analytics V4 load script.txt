@@ -1,0 +1,290 @@
+///$tab Main
+//Binary [d67248db-671d-4062-9b09-55317578558a];
+SET ThousandSep=',';
+SET DecimalSep='.';
+SET MoneyThousandSep=',';
+SET MoneyDecimalSep='.';
+SET MoneyFormat='$ ###0.00;-$ ###0.00';
+SET TimeFormat='h:mm:ss TT';
+SET DateFormat='DD/MM/YYYY';
+SET TimestampFormat='M/D/YYYY h:mm:ss[.fff] TT';
+SET FirstWeekDay=6;
+SET BrokenWeeks=1;
+SET ReferenceDay=0;
+SET FirstMonthOfYear=1;
+SET CollationLocale='en-US';
+SET CreateSearchIndexOnReload=1;
+SET MonthNames='Jan;Feb;Mar;Apr;May;Jun;Jul;Aug;Sep;Oct;Nov;Dec';
+SET LongMonthNames='January;February;March;April;May;June;July;August;September;October;November;December';
+SET DayNames='Mon;Tue;Wed;Thu;Fri;Sat;Sun';
+SET LongDayNames='Monday;Tuesday;Wednesday;Thursday;Friday;Saturday;Sunday';
+SET NumericalAbbreviation='3:k;6:M;9:G;12:T;15:P;18:E;21:Z;24:Y;-3:m;-6:μ;-9:n;-12:p;-15:f;-18:a;-21:z;-24:y';
+
+///$tab Section Access
+// Section Access;
+// Load * INLINE [
+//     ACCESS,  USER.EMAIL,             REDUCTION
+//     ADMIN,    vighnesh@diagonal.ai,      
+//     ADMIN,    bhaskar@diagonal.ai,   
+//     ADMIN,    bhaskar@diagonal.ai,   
+//     USER,    ankush.singh@gomomentus.com,      MANAGER 1
+//     USER,   ashish.gupta@gomomentus.com,    MANAGER 2         
+// ];
+// Section Application;
+///$tab Distribution List
+Replace LOAD
+    "Name" AS [DL_DISTRIBUTION_RECIPIENT_NAME],
+    "Email" AS [DL_DISTRIBUTION_EMAIL],
+    SubField([Filters],',') AS [DL_DISTRIBUTION_FILTERS],
+    SubField([Groups],',') AS [DL_DISTRIBUTION_GROUP_NAMES]
+FROM "lib://:DataFiles/Recipents.xlsx"
+(ooxml, embedded labels, table is DL_DISTRIBUTION_SVC_USERS_QCS);
+
+TempGroups:
+  REPLACE LOAD
+      *
+    FROM "lib://:DataFiles/Recipents.xlsx"
+    (ooxml, embedded labels, table is DL_DISTRIBUTION_SVC_GROUPS_QCS);
+
+let vEnabledFieldNo = FieldNumber('Enabled', 'TempGroups');
+
+if (vEnabledFieldNo > 0) then
+    DL_DISTRIBUTION_SVC_GROUPS_QCS:
+    REPLACE LOAD
+        "Name" AS [DL_DISTRIBUTION_GROUP_NAMES],
+        "Description" AS [DL_DISTRIBUTION_GROUP_DESCRIPTION],
+        "Enabled" AS [DL_DISTRIBUTION_GROUP_ENABLED]
+    Resident TempGroups;
+else
+
+    DL_DISTRIBUTION_SVC_GROUPS_QCS:
+    REPLACE LOAD
+        "Name" AS [DL_DISTRIBUTION_GROUP_NAMES],
+        "Description" AS [DL_DISTRIBUTION_GROUP_DESCRIPTION],
+        1 AS [DL_DISTRIBUTION_GROUP_ENABLED]
+    Resident TempGroups;
+end if
+
+Drop Table TempGroups;
+
+tag field DL_DISTRIBUTION_RECIPIENT_NAME with 'DL_DISTRIBUTION_SVC__recipientName';
+tag field DL_DISTRIBUTION_EMAIL with 'DL_DISTRIBUTION_SVC__recipientEmail';
+tag field DL_DISTRIBUTION_FILTERS with 'DL_DISTRIBUTION_SVC__recipientFilters';
+tag field DL_DISTRIBUTION_GROUP_NAMES with 'DL_DISTRIBUTION_SVC__groupsName';
+tag field DL_DISTRIBUTION_GROUP_DESCRIPTION with 'DL_DISTRIBUTION_SVC__groupDescription';
+tag field DL_DISTRIBUTION_GROUP_ENABLED with 'DL_DISTRIBUTION_SVC__groupEnabled';
+
+///$tab Files
+Venue:
+LOAD
+    "Venue ID",
+    "Venue Name",
+    Location,
+    Capacity as Ven_Capacity,
+    "Type" as Ven_Type,
+    "Contact Information" as Cantach_info,
+    "Manager Name",
+    Upper("Manager Name") as REDUCTION
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data Origional.xlsx]
+(ooxml, embedded labels, table is Venue);
+
+
+Space:
+LOAD
+    "Space ID",
+    //"Venue ID",
+    "Space Name",
+    "Space Type",
+    Capacity  as Sapce_Capacity,
+    "Price per Hour" as Hour_Price,
+    "Size (Square Feet)" as Sq_Feet
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data Origional.xlsx]
+(ooxml, embedded labels, table is Space);
+
+Event_Groups:
+LOAD
+    "Event ID",
+    "Venue ID",
+    "Event Name",
+    "Event Date",
+    "Event Type",
+    "Total Pax",
+    "Event Budget" as _Event,
+    "Event Revenue",
+    "Occupancy Percentage" as Occu_Rate
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data Origional.xlsx]
+(ooxml, embedded labels, table is Event);
+
+Event_Booking_Details:
+LOAD
+    "Booking ID",
+    "Event ID",
+    "Space ID",
+    //"Date of Booking",
+    "Date of Booking" as Booking_date,
+    "Date of Booking" as Chart_Date,
+    "Start Time",
+    "End Time",
+    "Number of Pax",
+    "Booking Revenue",
+    "Order Type",
+    "Sale Channel" as Sales_Channel,
+    "Target Revenue" as Target_Revenue
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data Origional.xlsx]
+(ooxml, embedded labels, table is EventBooking);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+///$tab Master Calender
+QuartersMap:
+MAPPING LOAD 
+rowno() as Month,
+'Q' & Ceil (rowno()/3) as Quarter
+AUTOGENERATE (12);
+ 
+Temp:
+Load
+               min(Booking_date) as minDate,
+               max(Booking_date) as maxDate
+Resident Event_Booking_Details;
+ 
+Let varMinDate = Num(Peek('minDate', 0, 'Temp'));
+Let varMaxDate = Num(Peek('maxDate', 0, 'Temp'));
+DROP Table Temp;
+ 
+TempCalendar:
+LOAD
+               $(varMinDate) + Iterno()-1 As Num,
+               Date($(varMinDate) + IterNo() - 1) as TempDate
+               AutoGenerate 1 While $(varMinDate) + IterNo() -1 <= $(varMaxDate);
+ 
+MasterCalendar:
+Load
+               TempDate AS Booking_date,
+				num(TempDate) as DateNum,
+               week(TempDate) As Week,
+               Year(TempDate) As Year,
+               Month(TempDate) As Month,
+               Day(TempDate) As Day,
+               YeartoDate(TempDate)*-1 as CurYTDFlag,
+               YeartoDate(TempDate,-1)*-1 as LastYTDFlag,
+               inyear(TempDate, Monthstart($(varMaxDate)),-1) as RC12,
+               date(monthstart(TempDate), 'MMM-YYYY') as MonthYear,
+               ApplyMap('QuartersMap', month(TempDate), Null()) as Quarter,
+               Week(weekstart(TempDate)) & '-' & WeekYear(TempDate) as WeekYear,
+               WeekDay(TempDate) as WeekDay
+Resident TempCalendar
+Order By TempDate ASC;
+Drop Table TempCalendar;
+///$tab Exit Script
+Exit Script;
+///$tab SQL
+LIB CONNECT TO 'Dev Space:Azure_SQL_Database';
+
+[Address]:
+SELECT AddressID as Address,
+	AddressLine1,
+	AddressLine2,
+	City,
+	PostalCode,
+	rowguid,
+	ModifiedDate
+FROM AdventureWorks.SalesLT.Address;
+
+
+
+
+///$tab DIM
+Venue:
+LOAD
+    "Venue ID",
+    "Venue Name",
+    Location,
+    Capacity as Ven_Capacity,
+    "Type" as Ven_Type,
+    "Contact Information" as Cantach_info,
+    "Manager Name"
+    
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data (1).xlsx]
+(ooxml, embedded labels, table is Venue);
+
+Space:
+LOAD
+    "Space ID",
+    "Venue ID",
+    "Space Name",
+    "Space Type",
+    Capacity  as Sapce_Capacity,
+    "Price per Hour" as Hour_Price,
+    "Size (Square Feet)" as Sq_Feet
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data (1).xlsx]
+(ooxml, embedded labels, table is Space);
+///$tab FACT
+FACT_EVENTS:
+LOAD
+    "Event ID",
+    "Venue ID",
+    "Event Name",
+    "Event Date",
+    "Event Type",
+    "Total Pax",
+    "Event Budget" as _Event,
+    "Event Revenue",
+    "Occupancy Percentage" as Occu_Rate,
+    "Event ID"&"Event Date" as %KEY
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data (1).xlsx]
+(ooxml, embedded labels, table is Event);
+
+FACT_EVENT_BOOKING:
+LOAD
+    "Booking ID",
+    "Event ID",
+    //"Space ID",
+    "Date of Booking",
+    //"Date of Booking" as Booking_date,
+    "Date of Booking" as Chart_Date,
+    "Start Time",
+    "End Time",
+    "Number of Pax",
+    "Booking Revenue",
+    "Order Type",
+    "Sale Channel" as Sales_Channel,
+    "Target Revenue" as Target_Revenue,
+    "Event ID"&"Date of Booking" as %KEY
+FROM [lib://S02. USE CASE DEV:DataFiles/Mock Data (1).xlsx]
+(ooxml, embedded labels, table is EventBooking);
+
+
+DateBridge:
+load 
+	 "Event ID"&"Date of Booking" as %KEY ,
+     "Event ID",
+	  "Date of Booking" as Booking_date,
+      'Booking' as FLG
+      Resident FACT_EVENT_BOOKING;
+Concatenate
+load 
+"Event ID"&"Event Date" as %KEY,
+"Event ID",
+"Event Date" as Booking_date,
+'Event' as FLG
+Resident FACT_EVENTS;
+Drop Field "Event ID" from FACT_EVENT_BOOKING,FACT_EVENTS;
+
+///$tab Exit Script
+Exit Script;
